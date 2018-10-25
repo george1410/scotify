@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  doctype html
+  html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title Scotify
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', type='text/css', media='screen', href='style.css')
+    script(src='https://code.jquery.com/jquery-3.3.1.min.js', integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=', crossorigin='anonymous')
+    script(src='script.js')
+  body
+    .container
+      h1 Scotify 🏴󠁧󠁢󠁳󠁣󠁴󠁿
+      small
+        | Just another brilliant idea from 
+        a(href='https://georgemccarron.com') George McCarron
+      p
+        | Everyone loves Scottish twitter, right? Now it's time to translate the whole internet...
+      form(action='')
+        input(type='text', placeholder='bbc.co.uk')
+        input(type='submit', value='Scotify! 🏴󠁧󠁢󠁳󠁣󠁴󠁿')
+
