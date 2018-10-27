@@ -6,12 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
-router.get('/translate', (req, res) => {
-  res.render('index');
-});
-
-router.get('/translate/:id', (req, res) => {
-  res.send('url: ' + req.params.id);
+router.post('/translate', (req, res, next) => {
+  console.log(req.body);
 });
 
 module.exports = router;

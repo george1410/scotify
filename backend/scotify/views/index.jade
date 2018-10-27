@@ -14,8 +14,8 @@ body
       a(href='https://georgemccarron.com') George McCarron
     p
       | Everyone loves Scottish twitter, right? Now it's time to translate the whole internet...
-    form(action='')
-      input(type='text', placeholder='bbc.co.uk')
+    form(action='translate', method='post')
+      input(type='text', placeholder='bbc.co.uk', name='url')
       input(type='submit', value='Scotify! 🏴󠁧󠁢󠁳󠁣󠁴󠁿')
   script(src='/javascripts/script.js')
 
