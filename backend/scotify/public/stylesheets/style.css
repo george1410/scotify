@@ -29,16 +29,17 @@ form {
 
 textarea {
   background: none;
-  border: none;
   border: #ffffff solid 2px;
   color: #ffffff;
   font-weight: 600;
   padding: 5px 10px;
   width: 720px;
   resize: none;
+  height: 200px;
+  display: block;
 }
 
-textarea::placeholder {
+#output-placeholder, textarea::placeholder {
   color: #ffffff;
   opacity: 0.5;
 }
@@ -47,7 +48,7 @@ textarea:focus {
   outline: none;
 }
 
-input, form, textarea {
+#output-text, input, form, textarea {
   font-size: 1.3rem;
 }
 
@@ -63,10 +64,21 @@ input[type="submit"] {
   transition: all 0.6s;
   display: block;
   text-align: center;
-  margin: 0 auto;
+  margin: 15px auto;
 }
 
 input[type="submit"]:hover {
   background: #ffffff;
   color: #2548b4;
+}
+
+#output-text {
+  border: #ffffff solid 2px;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 5px 10px;
+  width: 720px;
+  height: 200px;
+  overflow-y: scroll;
+  text-align: left;
 }

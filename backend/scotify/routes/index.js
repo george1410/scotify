@@ -9,6 +9,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/translate', (req, res, next) => {
   //TODO: business logic goes here.
+  var data = {foo: 123, bar: 456};
 
   //Return the JSON array of data back to the client.
   res.send(data);

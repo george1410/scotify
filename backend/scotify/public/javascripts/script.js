@@ -9,6 +9,7 @@ $(function () {
 
         $.getJSON('/translate', data, (data) => {
                 console.log(data);
+                $('#output-text').text(JSON.stringify(data));
             }
         );
     });
