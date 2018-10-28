@@ -13,9 +13,10 @@ body
       | Just another brilliant idea from 
       a(href='https://georgemccarron.com') George McCarron
     p
-      | Everyone loves Scottish twitter, right? Now it's time to translate the whole internet...
-    form(action='translate', method='post')
-      input(type='text', placeholder='bbc.co.uk', name='url')
+      | Everyone loves Scottish twitter, right? Now it's time to translate everything else...
+    form(action='')
+      textarea(placeholder='Text to Scotify...', id='input-text' rows='8')
       input(type='submit', value='Scotify! 🏴󠁧󠁢󠁳󠁣󠁴󠁿')
+  script(src="https://code.jquery.com/jquery-3.3.1.min.js")
   script(src='/javascripts/script.js')
 

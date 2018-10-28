@@ -27,26 +27,28 @@ form {
   margin-top: 50px;
 }
 
-input[type="text"] {
+textarea {
   background: none;
   border: none;
-  border-bottom: #ffffff solid 2px;
+  border: #ffffff solid 2px;
   color: #ffffff;
   font-weight: 600;
   padding: 5px 10px;
+  width: 720px;
+  resize: none;
 }
 
-input[type="text"]::placeholder {
+textarea::placeholder {
   color: #ffffff;
   opacity: 0.5;
 }
 
-input[type="text"]:focus {
+textarea:focus {
   outline: none;
 }
 
-input, form {
-  font-size: 2rem;
+input, form, textarea {
+  font-size: 1.3rem;
 }
 
 input[type="submit"] {
@@ -55,11 +57,13 @@ input[type="submit"] {
   color: #ffffff;
   font-size: 1rem;
   padding: 12px 24px;
-  margin-left: 10px;
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.6s;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
 }
 
 input[type="submit"]:hover {
